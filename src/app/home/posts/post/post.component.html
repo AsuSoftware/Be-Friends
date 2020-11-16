@@ -1,0 +1,57 @@
+<div class="post">
+    <div class="information">
+        <img src="./assets/img/profile-img.jpg" alt="Profile image" />
+        <div class="user-info">
+            <p>Andreea Bia</p>
+            <div class="date">
+                <p>10h - </p>
+                <div class="privacy-option">
+                    <i class="fas fa-globe-americas"></i>
+                    <!-- <i class="fas fa-angle-down"></i> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <p>My new car!</p>
+        <img src="./assets/img/car.jpg" alt="image post" />
+    </div>
+    <div class="options">
+        <div class="option">
+            <i (click)="onAdoreClick()" *ngIf="!loveState" class="far fa-heart"></i>
+            <i (click)="onAdoreClick()" *ngIf="loveState" class="fas fa-heart"></i>
+            <p>34</p>
+        </div>
+        <div class="option">
+            <i (click)="onClickComment()" class="fas fa-comment"></i>
+            <p>5</p>
+        </div>
+        <div class="option">
+            <i class="fas fa-share"></i>
+            <p>1</p>
+        </div>
+    </div>
+    <div [ngClass]="(commentState)?'comments visible ':'comments'">
+        <div class="add-comment">
+            <div class="container-add-comment">
+                <img src="./assets/img/profile-img.jpg" alt="profile img" />
+                <input type="text" placeholder="Write comment.." />
+            </div>
+            <i (click)="addComment()" class="fas fa-paper-plane"></i>
+        </div>
+        <div class="comment">
+            <div class="comment-info">
+                <img src="./assets/img/profile-img.jpg" alt="profile img" />
+                <div class="comment-user-info">
+                    <p>Andreas Smith</p>
+                    <p>1h ago</p>
+                </div>
+                <p class="comment-user">Wow, look's great</p>
+            </div>
+            <div class="comment-options">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share"></i>
+            </div>
+        </div>
+    </div>
+</div>

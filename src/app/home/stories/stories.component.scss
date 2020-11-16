@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+
+$newStory: #f24a0c;
+$post: #4f5b66;
+
+.container-story::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #535353;
+  margin-top: 15px;
+}
+
+.container-story .story {
+  display: flex;
+  align-items: center;
+}
+
+.container-story .story .right {
+  font-size: 20px;
+  color: #fff;
+}
+
+.container-story .story .myStory {
+  position: relative;
+  margin: 0 10px;
+  display: flex;
+}
+
+.container-story .story .myStory input {
+  display: none;
+}
+
+.container-story .story .myStory img {
+  margin: 0 !important;
+  border: 0 !important;
+  cursor: default;
+}
+
+.container-story .story .myStory i {
+  font-size: 25px;
+  position: absolute;
+  left: 25%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.container-story .story img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 2px solid $newStory;
+  cursor: pointer;
+}

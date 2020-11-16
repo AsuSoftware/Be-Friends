@@ -1,0 +1,22 @@
+<div class="add-post">
+    <div class="up">
+        <div class="container-input">
+            <div class="post-write">
+                <img src="./assets/img/profile-img.jpg" alt="image" />
+                <input type="text" placeholder="What are you thinking about?" />
+            </div>
+            <i class="fas fa-paper-plane"></i>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="box" (click)='addImage()' >
+            <i class="fas fa-images"></i>
+            <p>Photo/Video</p>
+            <input type="file" id="file">
+        </div>
+        <div class="box">
+            <i (click)="createPost()" class="fas fa-map-marked-alt"></i>
+            <p>Check-in</p>
+        </div>
+    </div>
+</div>
